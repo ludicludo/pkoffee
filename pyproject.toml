@@ -8,3 +8,21 @@ version = "0.1.0"
 description = "Coffee productivity analysis with statistical modeling"
 readme = "README.md"
 requires-python = ">=3.12"
+authors = [
+    { name = "Andrea Cernuschi", email =  "cernuschi@lpsc.in2p3.fr",
+    name = "Nicolás Avalos", email =  "nicolaseavalos@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/s3-school/pkoffee-solution"
+"Bug Tracker" = "https://github.com/s3-school/pkoffee-solution/issues"
+"Documentation" = "https://github.com/s3-school/pkoffee-solution/blob/main/README.md"
