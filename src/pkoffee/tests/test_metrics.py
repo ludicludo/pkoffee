@@ -34,11 +34,11 @@ def test_compute_r2_properties():
     y_true = rng.normal(size=10)
     
     # Perfect prediction
-    assert compute_r2(y_true, y_true) == 1.0
+    assert np.isclose(compute_r2(y_true, y_true) == 1.0)
     
     # Mean prediction
     y_mean = np.full_like(y_true, np.mean(y_true))
-    assert compute_r2(y_true, y_mean) == 0.0
+    assert np.isclose(compute_r2(y_true, y_mean) == 0.0)
     
 def test_rmse():
     from pkoffee.metrics import compute_rmse
