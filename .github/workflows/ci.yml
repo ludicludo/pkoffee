@@ -1,0 +1,13 @@
+name: continuous integration test
+on: [push]
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v6
+      - name: install pixi
+        uses: prefix-dev/setup-pixi@v0.9.3
+        with:
+          pixi-version: v0.62.2
+      - run: pixi run test
